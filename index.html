@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Nutricionista Esportiva</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" type="text/css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a id="brand" class="navbar-brand h1" href="#">
+        <span>Nutricionista Esportiva</span>
+        <i class="fa fa-leaf" aria-hidden="true"></i>
+      </a>
+    </nav>
+    <section class="container">
+      <section class="row">
+        <h2 class="p-4">
+          <i class="fa fa-calendar mr-2" aria-hidden="true"></i>
+          Consultas Realizadas
+        </h2>
+        <table class="table table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col">Data da Consulta</th>
+              <th scope="col">Peso (kg)</th>
+              <th scope="col">Altura (m)</th>
+              <th scope="col">IMC</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-de-pacientes">
+            <tr>
+              <td class="info-nome"  >Andrey Masiero</td>
+              <td class="info-data"  >14/01/2020</td>
+              <td class="info-peso"  >85</td>
+              <td class="info-altura">1.83</td>
+              <td class="info-imc"   >0</td>
+            </tr>
+            <tr>
+              <td class="info-nome"  >Carol Castro</td>
+              <td class="info-data"  >14/01/2020</td>
+              <td class="info-peso"  >45</td>
+              <td class="info-altura">1.66</td>
+              <td class="info-imc"   >0</td>
+            </tr>
+            <tr>
+              <td class="info-nome"  >Marjorie Estiano</td>
+              <td class="info-data"  >14/01/2020</td>
+              <td class="info-peso"  >42</td>
+              <td class="info-altura">1.61</td>
+              <td class="info-imc"   >0</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="row">
+        <h2 class="p-4 mt-4">
+          <i class="fa fa-file-text-o mr-2" aria-hidden="true"></i>
+          Cadastrar Consultas
+        </h2>
+        <form class="col-12">
+          <div class="form-group">
+            <label for="nome">Nome do Paciente</label>
+            <input type="text" class="form-control" id="nome" placeholder="ex: Severus Snape" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="data">Data da Consulta</label>
+              <input type="date" class="form-control" id="data" required>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="peso">Peso (kg)</label>
+              <input type="number" class="form-control" min="0.01" step="0.01" id="peso" placeholder="ex: 83.4" required>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="altura">Altura (m)</label>
+              <input type="number" class="form-control" id="altura" min="0.01" step="0.01" placeholder="ex: 1.83" required>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end mt-3">
+            <button type="submit" class="btn btn-primary mr-2">Confirmar</button>
+            <button type="button" class="btn btn-secondary">Limpar</button>
+          </div>
+        </form>
+        </section>
+    </section>
+  </body>
+</html>
