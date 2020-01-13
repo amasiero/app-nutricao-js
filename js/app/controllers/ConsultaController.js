@@ -11,15 +11,11 @@ class ConsultaController {
         evento.preventDefault();
         let consulta = new Consulta(
             this._inputNome.value,
-            new Date(...
-                this._inputData.value
-                    .split('-')
-                    .map((item, indice) =>  item - (indice % 2))
-            ),
+            DateHelper.textoParaData(this._inputData.value),
             this._inputPeso.value,
             this._inputAltura.value
         );
-
         console.log(consulta);
+        console.log(DateHelper.dataParaTexto(consulta.data));
     }
 }
