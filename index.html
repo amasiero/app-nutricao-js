@@ -40,7 +40,7 @@
           <i class="fa fa-file-text-o mr-2" aria-hidden="true"></i>
           Cadastrar Consultas
         </h2>
-        <form class="col-12">
+        <form class="col-12" onsubmit="consultaController.adiciona(event)">
           <div class="form-group">
             <label for="nome">Nome do Paciente</label>
             <input type="text" class="form-control" id="nome" placeholder="ex: Severus Snape" required>
@@ -67,14 +67,9 @@
         </section>
     </section>
     <script type="text/javascript" src="js/app/models/Consulta.js"></script>
+    <script type="text/javascript" src="js/app/controllers/ConsultaController.js"></script>
     <script type="text/javascript">
-      var consulta = new Consulta(
-              'Hermione Granger',
-              new Date(),
-              52, 1.65 );
-      console.log(consulta.data);
-      consulta.data.setDate(13);
-      console.log(consulta.data);
+      let consultaController = new ConsultaController();
     </script>
   </body>
 </html>
