@@ -20,20 +20,7 @@
           <i class="fa fa-calendar mr-2" aria-hidden="true"></i>
           Consultas Realizadas
         </h2>
-        <table class="table table-bordered">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">Nome</th>
-              <th scope="col">Data da Consulta</th>
-              <th scope="col">Peso (kg)</th>
-              <th scope="col">Altura (m)</th>
-              <th scope="col">IMC</th>
-            </tr>
-          </thead>
-          <tbody>
-
-          </tbody>
-        </table>
+        <div id="consultasView" class="col-12"></div>
       </section>
       <section class="row">
         <h2 class="p-4 mt-4">
@@ -69,6 +56,7 @@
     <script type="text/javascript" src="js/app/models/Consulta.js"></script>
     <script type="text/javascript" src="js/app/models/ListaConsultas.js"></script>
     <script type="text/javascript" src="js/app/helpers/DateHelper.js"></script>
+    <script type="text/javascript" src="js/app/views/ConsultasView.js"></script>
     <script type="text/javascript" src="js/app/controllers/ConsultaController.js"></script>
     <script type="text/javascript">
       let consultaController = new ConsultaController();

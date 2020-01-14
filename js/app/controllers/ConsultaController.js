@@ -6,11 +6,14 @@ class ConsultaController {
         this._inputPeso = $('#peso');
         this._inputAltura = $('#altura');
         this._listaConsultas = new ListaConsultas();
+        this._consultasView = new ConsultasView($('#consultasView'));
+        this._consultasView.update(this._listaConsultas);
     }
 
     adiciona(evento) {
         evento.preventDefault();
         this._listaConsultas.adiciona(this._criaConsulta());
+        this._consultasView.update(this._listaConsultas);
         this._limpaFormulario();
     }
 
